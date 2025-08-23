@@ -70,9 +70,9 @@ func (r *ResponseModifier) WriteMsg(res *dns.Msg) error {
 		i++
 	}
 
-	// Rename all the records with the above canonical name to the zone name
+	// Rename all CNAME records with the above canonical name to the zone name
 	for _, rr := range res.Answer {
-		if rr.Header().Name == cname {
+		if rr.Header().Name == cname && rr.Header().Rrtype == dns.TypeCNAME {
 			rr.Header().Name = zone
 			rr.Header().Ttl = min(ttl, rr.Header().Ttl)
 		}
