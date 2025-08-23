@@ -70,12 +70,22 @@ func (r *ResponseModifier) WriteMsg(res *dns.Msg) error {
 		i++
 	}
 
-	// Rename all CNAME records with the above canonical name to the zone name
+	// Rename all A,AAAA records with the above canonical name to the zone name
 	for _, rr := range res.Answer {
-		if rr.Header().Name == cname && rr.Header().Rrtype == dns.TypeCNAME {
-			rr.Header().Name = zone
-			rr.Header().Ttl = min(ttl, rr.Header().Ttl)
+		if rr.Header().Name != cname {
+			continue
 		}
+
+		if rr.Header().Rrtype != dns.TypeA {
+			continue
+		}
+
+		if rr.Header().Rrtype != dns.TypeAAAA {
+			continue
+		}
+
+		rr.Header().Name = zone
+		rr.Header().Ttl = min(ttl, rr.Header().Ttl)
 	}
 
 	return r.ResponseWriter.WriteMsg(res)
