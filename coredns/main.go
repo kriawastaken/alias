@@ -2,7 +2,7 @@ package main
 
 import (
 	_ "github.com/coredns/coredns/core/plugin"
-	_ "github.com/serverwentdown/alias"
+	_ "github.com/kriawastaken/alias"
 
 	"github.com/coredns/coredns/core/dnsserver"
 	"github.com/coredns/coredns/coremain"

@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	_ "github.com/serverwentdown/alias"
+	_ "github.com/kriawastaken/alias"
 
 	"github.com/coredns/coredns/plugin/test"
 	ctest "github.com/coredns/coredns/test"
