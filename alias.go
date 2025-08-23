@@ -90,5 +90,4 @@ func (r *ResponseModifier) Write(buf []byte) (int, error) {
 // ResponseWriter's Hijack method if there is one, or returns an error.
 func (r *ResponseModifier) Hijack() {
 	r.ResponseWriter.Hijack()
-	return
 }
