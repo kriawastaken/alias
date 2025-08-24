@@ -1750,6 +1750,8 @@ github.com/kriawastaken/alias v0.0.0-20250823235617-f5e437cc43bb h1:2UBwjz9eXwmw
 github.com/kriawastaken/alias v0.0.0-20250823235617-f5e437cc43bb/go.mod h1:mMtD5i9J0PVqpSIwCeUtKjV+XtUYNcCxGVd38C9y0xU=
 github.com/kriawastaken/alias v0.0.0-20250824000506-c9ad928e459f h1:JEJeHj6DTBbYpmzC4PWRDiCza0KqTOG1fcGFoTcDGUs=
 github.com/kriawastaken/alias v0.0.0-20250824000506-c9ad928e459f/go.mod h1:mMtD5i9J0PVqpSIwCeUtKjV+XtUYNcCxGVd38C9y0xU=
+github.com/kriawastaken/alias v0.1.1 h1:b5GZhqieKKQgDxK2CNzX8Ah+OWeDSANvqKgK1J7hx0M=
+github.com/kriawastaken/alias v0.1.1/go.mod h1:mMtD5i9J0PVqpSIwCeUtKjV+XtUYNcCxGVd38C9y0xU=
 github.com/kylelemons/godebug v1.1.0/go.mod h1:9/0rRGxNHcop5bhtWyNeEfOS8JIWk580+fNqagV/RAw=
 github.com/labstack/echo v3.3.10+incompatible/go.mod h1:0INS7j/VjnFxD4E2wkz67b8cVwCLbBmJyDaka6Cmk1s=
 github.com/labstack/echo/v4 v4.9.0/go.mod h1:xkCDAdFCIf8jsFQ5NnbK7oqaF/yU1A1X20Ltm0OvSks=
