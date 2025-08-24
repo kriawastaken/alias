@@ -76,11 +76,7 @@ func (r *ResponseModifier) WriteMsg(res *dns.Msg) error {
 			continue
 		}
 
-		if rr.Header().Rrtype != dns.TypeA {
-			continue
-		}
-
-		if rr.Header().Rrtype != dns.TypeAAAA {
+		if rr.Header().Rrtype != dns.TypeA && rr.Header().Rrtype != dns.TypeAAAA {
 			continue
 		}
 
